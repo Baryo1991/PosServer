@@ -15,7 +15,9 @@ db.once('open', function() {
 
 const app = require('./app');
 
-app.get('/','');
+app.get('/',(req, res)=>{
+  res.send(😀)
+});
 const port  = process.env.PORT || 3000;
 app.listen(port,()=>{
     console.log(`Sever is lisetnning on port ${port}`)
