@@ -16,7 +16,7 @@ db.once('open', function() {
 const app = require('./app');
 
 app.get('/',(req, res)=>{
-  res.send(😀)
+  res.send('Hello..');
 });
 const port  = process.env.PORT || 3000;
 app.listen(port,()=>{
